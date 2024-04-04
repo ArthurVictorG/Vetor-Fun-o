@@ -1,0 +1,25 @@
+//Em um sistema de monitoramento de temperaturas, é importante identificar a temperatura mais alta registrada. Faça um programa que leia 8 valores de temperatura e, em seguida, encontre e imprima a maior temperatura registrada.
+import java.util.Scanner;
+
+public class Main {
+  public static void main(String[] args) {
+    Scanner scanner = new Scanner(System.in);
+    //declarar variáveis
+    int maiorTemperatura = 0;
+    int temperaturaAtual = 0;
+    //solicitar ao usuário que insira 8 valores de temperatura
+    for (int i = 0; i < 8; i++){
+      System.out.print("Insira a temperatura " + (i + 1) + ": ");
+      temperaturaAtual = scanner.nextInt();
+      //verificar se a temperatura atual é maior que a maior temperatura registrada
+      if (temperaturaAtual > maiorTemperatura){
+        maiorTemperatura = temperaturaAtual;
+      }
+      
+      
+    }
+    //imprimir a maior temperatura registrada
+    System.out.println("A maior temperatura registrada foi: " + maiorTemperatura);
+    
+  }
+}
