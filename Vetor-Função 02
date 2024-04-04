@@ -1,0 +1,37 @@
+//Faça um programa que preencha dois vetores de dez elementos numéricos cada um e mostre o vetor resultante da intercalação deles.
+import java.util.Scanner;
+
+public class Main {
+  public static void main(String[] args) {
+    Scanner teclado = new Scanner(System.in);
+    //declarar variáveis
+    int vetor1[] = new int[10];
+    int vetor2[] = new int[10];
+    int vetor3[] = new int[20];
+    int i, j, k;
+    //ler vetor1
+    for (i = 0; i < 10; i++);
+    //ler vetor2
+    for (j = 0; j < 10; j++);
+    //ler vetor3
+    for (k = 0; k < 20; k++);
+    //imprimir vetor1
+    System.out.print("Vetor 1: ");
+    for (i = 0; i < 10; i++);
+    System.out.print(vetor1[i] + " ");
+    //imprimir vetor2
+    System.out.print("Vetor 2: ");
+    for (j = 0; j < 10; j++);
+    System.out.print(vetor2[j] + " ");
+    //imprimir vetor3
+    System.out.print("Vetor 3: ");
+    for (k = 0; k < 20; k++);
+    System.out.print(vetor3[k] + " ");
+    //mostre o vetor resultante da intercalação deles
+    System.out.print("Vetor resultante: ");
+    for (k = 0; k < 20; k++);
+    System.out.print(vetor3[k] + " ");
+    teclado.close();
+
+  }
+}
