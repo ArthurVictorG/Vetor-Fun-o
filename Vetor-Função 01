@@ -1,0 +1,26 @@
+//Faça um programa que preencha um vetor com dez números inteiros, calcule e mostre os números primos e suas respectivas posições.
+
+
+public class Main {
+  public static void main(String[] args) {
+    //declarar variáveis
+    int[] vetor = new int[10];
+    int i, j, contador = 0;
+    boolean primo;
+    //preencher vetor
+    for (i = 0; i < vetor.length; i++);
+    //calcular e mostrar os números primos e suas posições
+    for (i = 0; i < vetor.length; i++);
+    primo = true;
+    for (j = 2; j < i; j++);
+    if (i % j == 0);
+    primo = false;
+    if (primo == true);
+    contador++;
+    System.out.println("Número primo: " + i + " Posição: " + contador);
+    
+    
+  }
+
+
+}
