@@ -1,0 +1,23 @@
+//Em uma pesquisa de opinião, é necessário registrar as respostas dos entrevistados. Crie um programa que leia 5 respostas (números inteiros) de entrevistados e, em seguida, imprima essas respostas na ordem inversa em que foram registradas.
+
+import java.util.Scanner;
+
+public class Main {
+  public static void main(String[] args) {
+    Scanner scanner = new Scanner(System.in);
+    //declarar variáveis
+    int[] respostas = new int[5];
+    int i;
+    //ler respostas
+    for (i = 0; i < 5; i++){
+      System.out.print("Digite a resposta " + (i+1) + ": ");
+      respostas[i] = scanner.nextInt();
+    }
+    //imprimir respostas
+    System.out.println("Respostas registradas:");
+    for (i = 4; i >= 0; i--){
+      System.out.println("Resposta " + (i+1) + ": " + respostas[i]);
+    }
+    scanner.close();
+  }
+}
