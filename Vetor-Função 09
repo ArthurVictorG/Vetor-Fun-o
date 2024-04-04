@@ -1,0 +1,21 @@
+//Em um sistema de vendas, é necessário imprimir os recibos para os clientes. Escreva um programa que solicite ao usuário digitar a quantidade de recibos que deseja imprimir e, em seguida, imprima os números dos recibos de 1 até o número desejado utilizando um loop while.
+import java.util.Scanner;
+
+public class Main {
+  public static void main(String[] args) {
+  Scanner sc = new Scanner(System.in);
+    //declarar variáveis
+    int quantidade;
+    int contador = 1;
+    //solicitar ao usuário a quantidade de recibos
+    System.out.println("Digite a quantidade de recibos que deseja imprimir:");
+    quantidade = sc.nextInt();
+    //imprimir os recibos
+    while (contador <= quantidade){
+      System.out.println("Recibo número: " + contador);
+      contador++;
+      
+    }
+    
+  }
+}
