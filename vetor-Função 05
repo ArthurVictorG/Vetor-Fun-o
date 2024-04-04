@@ -1,0 +1,30 @@
+//Escreva um programa em java que preencha um vetor com 15 números inteiros aleatórios entre 1 e 50. Verifique se o número 20 existe nesse vetor e retorne seu índice caso ele exista. 
+import java.util.Random;
+import java.util.Scanner;
+
+public class Main {
+  public static void main(String[] args) {
+    //declarar variáveis
+    int[] vetor = new int[15];
+    int i, cont = 0;
+    Scanner leia = new Scanner(System.in);
+    Random gerador = new Random();
+    //preencher o vetor
+    for (i = 0; i < vetor.length; i++){
+      vetor[i] = gerador.nextInt(50)+1;
+    }
+    //verificar se o número 20 existe no vetor
+    for (i = 0; i < vetor.length; i++){
+      if (vetor[i] == 20){
+        cont++;
+      }
+    }
+    //exibir o vetor
+    for (i = 0; i < vetor.length; i++){
+      System.out.println(vetor[i]);
+    }
+    //exibir a quantidade de vezes que o número 20 apareceu
+    System.out.println("O número 20 apareceu " + cont + " vezes");
+  
+  }
+}
