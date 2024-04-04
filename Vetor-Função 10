@@ -1,0 +1,19 @@
+//Em uma escola, os professores precisam ensinar a tabuada aos alunos. Crie um programa que peça ao usuário inserir um número inteiro correspondente à tabuada desejada e, em seguida, imprima a tabuada desse número até 10.
+import java.util.Scanner;
+
+public class Main {
+  public static void main(String[] args) {
+    Scanner scanner = new Scanner(System.in);
+    //declarar variáveis
+    int num;
+    int i;
+    //entrada de dados
+    System.out.println("Digite um número inteiro: ");
+    num = scanner.nextInt();
+    //processamento
+    for (i = 1; i <= 10; i++){
+      System.out.println(num + " x " + i + " = " + num*i);
+    }
+    
+  }
+}
